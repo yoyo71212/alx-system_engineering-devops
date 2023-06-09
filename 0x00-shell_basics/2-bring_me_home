@@ -1,2 +1,2 @@
 #!/bin/bash
-eval cd ~"$USER"
+cd ~user_name
