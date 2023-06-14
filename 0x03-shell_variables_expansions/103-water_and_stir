@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "$((${WATER//water/10} + ${STIR//stir/10}))" | base -i 10 -o bestchol)
