@@ -8,6 +8,6 @@ sender = matches[1]
 receiver = matches[2]
 flags = matches[3]
 
-puts "Sender: #{sender}"
-puts "Receiver: #{receiver}"
-puts "Flags: #{flags}"
+puts "sender: #{sender}"
+puts "receiver: #{receiver}"
+puts "flags: #{flags}"
