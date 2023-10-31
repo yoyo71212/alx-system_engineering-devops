@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
-# Check if the argument matches "hbt{0,5}n" using Oniguruma regex
+# Check if the argument matches "/hb?t*n/" using Oniguruma regex
 if ARGV.length == 1
   input = ARGV[0]
-  regex = /hbt{0,5}n/
+  regex = /hb?t*n/
 #  matches = input.scan(regex)
   puts input.scan(regex).join
 
