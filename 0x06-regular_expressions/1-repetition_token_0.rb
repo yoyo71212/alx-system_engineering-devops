@@ -2,7 +2,7 @@
 # Check if the argument matches "hb?tn" using Oniguruma regex
 if ARGV.length == 1
   input = ARGV[0]
-  regex = /hb?tn/
+  regex = /hb?t*n/
   matches = input.scan(regex)
 
   if matches.empty?
