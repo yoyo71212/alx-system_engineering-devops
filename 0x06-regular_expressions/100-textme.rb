@@ -1,11 +1,9 @@
 #!/usr/bin/env ruby
 # Textme
 input = ARGV[0]
-regex = /\[from:(.*?),to:(.*?),flags:(.*?)\]/
-matches = input.scan(regex)
 
-sender = matches[1]
-receiver = matches[2]
-flags = matches[3]
+sender = input.scan(/from:(.*?)\]/)
+receiver = input.scan(/to:(.*?)\]/)
+flags = input.scan(/flags:(.*?)\]/)
 
 puts [sender, receiver, flags].join(',')
