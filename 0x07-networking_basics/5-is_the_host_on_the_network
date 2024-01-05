@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Bash script that pings an IP address passed as an argument
 
-if [ "$#" -eq 0	]
+if [ "$#" -ne 1	]
 then
 	echo "Usage: $0 {ip_address}"
 else
